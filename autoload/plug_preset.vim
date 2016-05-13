@@ -18,9 +18,7 @@ function! plug_preset#plug(repository)
 		call add(args, string(opts))
 	endif
 
-	let md = printf('Plug %s', join(args, ', '))
-	echom md
-	execute md
+	execute printf('Plug %s', join(args, ', '))
 endfunction
 
 
