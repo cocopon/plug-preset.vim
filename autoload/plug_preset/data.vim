@@ -22,7 +22,7 @@ let s:data['jedi-vim'] = {
 " }}}
 " P {{{
 let s:data['previm'] = {
-			\ 	'on': 'PrevimOpen'
+			\ 	'for': 'markdown'
 			\ }
 " }}}
 " R {{{
