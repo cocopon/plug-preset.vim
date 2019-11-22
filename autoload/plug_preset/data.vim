@@ -15,6 +15,11 @@ function! plug_preset#data#get(repository)
 endfunction
 
 
+" C {{{
+let s:data['coc.nvim'] = {
+			\ 	'branch': 'release'
+			\ }
+" }}}
 " J {{{
 let s:data['jedi-vim'] = {
 			\ 	'for': 'python'
