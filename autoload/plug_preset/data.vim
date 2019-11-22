@@ -6,55 +6,55 @@ let s:data = {}
 
 
 function! s:repository_name(repository)
-	return fnamemodify(a:repository, ':t')
+  return fnamemodify(a:repository, ':t')
 endfunction
 
 function! plug_preset#data#get(repository)
   let name = s:repository_name(a:repository)
-	return get(s:data, name, {})
+  return get(s:data, name, {})
 endfunction
 
 
 " C {{{
 let s:data['coc.nvim'] = {
-			\ 	'branch': 'release'
-			\ }
+      \   'branch': 'release'
+      \ }
 " }}}
 " J {{{
 let s:data['jedi-vim'] = {
-			\ 	'for': 'python'
-			\ }
+      \   'for': 'python'
+      \ }
 " }}}
 " P {{{
 let s:data['previm'] = {
-			\ 	'for': 'markdown'
-			\ }
+      \   'for': 'markdown'
+      \ }
 " }}}
 " R {{{
 let s:data['restart.vim'] = {
-			\ 	'on': 'Restart'
-			\ }
+      \   'on': 'Restart'
+      \ }
 " }}}
 " T {{{
 let s:data['thumbnail.vim'] = {
-			\ 	'on': 'Thumbnail'
-			\ }
+      \   'on': 'Thumbnail'
+      \ }
 " }}}
 " V {{{
 let s:data['vimproc'] = {
-			\ 	'do': 'make'
-			\ }
+      \   'do': 'make'
+      \ }
 let s:data['vim-qfreplace'] = {
-			\ 	'for': ['qf', 'unite']
-			\ }
+      \   'for': ['qf', 'unite']
+      \ }
 let s:data['vim-ref'] = {
-			\ 	'on': 'Ref'
-			\ }
+      \   'on': 'Ref'
+      \ }
 " }}}
 " W {{{
 let s:data['w3m.vim'] = {
-			\ 	'on': ['W3m', 'W3mTab', 'W3mSplit', 'W3mVSplit']
-			\ }
+      \   'on': ['W3m', 'W3mTab', 'W3mSplit', 'W3mVSplit']
+      \ }
 " }}}
 
 
